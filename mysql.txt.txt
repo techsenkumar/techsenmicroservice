@@ -1,0 +1,16 @@
+create schema `techsen-customer`;
+use `techsen-customer`;
+
+create table customer(
+phone_no bigint primary key,
+name varchar(50),
+age integer,
+gender char,
+address varchar(50),
+plan_id integer,
+password varchar(50)
+);
+
+insert into customer values(9090909090,'Mark', 25, 'M', 'Chicago', 1, '123');
+insert into customer values(9090909091,'Antony', 26, 'M', 'Tornanto', 2, '123');
+insert into customer values(9090909092,'Woman', 27, 'F', 'Chennai', 3, '123');
